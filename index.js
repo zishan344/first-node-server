@@ -25,7 +25,7 @@ const users = [
 ];
 
 app.get("/users", (req, res) => {
-  // filter by search quary
+  // filter by search query parameter
   if (req.query.name) {
     const search = req.query.name.toLocaleLowerCase();
     const mathched = users.filter((user) =>
